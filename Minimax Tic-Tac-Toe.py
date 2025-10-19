@@ -150,9 +150,9 @@ def play_game():
             print("AI is thinking...")
             start_time = time.time()
             # Alpha Beta (make comment to switch)
-            _, m = alphabeta(board, player=ai, alpha=-2, beta=2, me=ai, opp=human)
+            # _, m = alphabeta(board, player=ai, alpha=-2, beta=2, me=ai, opp=human)
             # Mini max (comment to switch)
-            # _, m = minimax(board, player=ai, me=ai, opp=human)
+            _, m = minimax(board, player=ai, me=ai, opp=human)
             end_time = time.time()
             board[m] = ai
             print(f"AI chose position {m+1}")
